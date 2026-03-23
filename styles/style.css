@@ -1,0 +1,392 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* REMOVE ROLAGEM LATERAL */
+html, body {
+    overflow-x: hidden;
+}
+
+/* CORES */
+:root {
+    --cor0: black;
+    --cor1: white;
+    --cor2: #2222ff;
+    --cor3: #c8e9ff;
+}
+
+/* MOBILE FIRST */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+/* TITULOS */
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+    text-align: center;
+    font-family: monospace;
+    display: inline;
+    border-bottom: dashed 1px gray;
+}
+h2 {
+    font-size: 1.7em;
+}
+
+
+/* HEADER */
+header {
+    padding: 15px 0;
+    background-color: var(--cor2);
+    width: 100%;
+}
+
+/* LOGO */
+header .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+header .logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    display: block;
+}
+
+header .logo h1 {
+    color: var(--cor1);
+    font-family: monospace;
+    border: none;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+}
+
+nav a {
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: monospace;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor2);
+    background-color: var(--cor1);
+}
+
+/* MAIN */
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+}
+
+main .fotoDev {
+    border-radius: 20px;
+    width: 70%;
+    border: solid 3px var(--cor3);
+}
+
+main p.apresentacao {
+    font-size: 1.5em;
+    font-family: monospace;
+    text-align: center;
+    margin: 25px 0 7px 0;
+}
+
+main section {    
+    text-align: center;
+    border-top: solid 1.8px;
+    border-left: dashed 1.8px gray;
+    border-right: dashed 1.8px gray;
+    padding: 20px 0;
+    
+}
+main section#sobremim {
+    height: 100vh;
+    padding: 0;
+    border-bottom: solid 2px gray;
+
+}
+#formacao {
+    border-top: none;
+}
+main section.sec-par {
+    background-color: var(--cor3);
+}
+main div.redes-sociais {
+    margin: 45px 0 30px 0;
+}
+main div.redes-sociais div.links-redes {
+    margin: auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+main div.redes-sociais h2{
+    display: block;
+}
+main div.redes-sociais img {
+    max-width: 38px;
+    margin-top: 30px;
+}
+main section#sobremim img#gif-scroll {
+    max-width: 80px;
+}
+main div.certificados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+main .container-img {
+    width: 70%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    
+}
+main .container-img a {
+    display: grid;
+}
+main img.certificado {
+    width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 5px 5px 0 0;
+}
+main .certificado:hover {
+    transform: scale(1.3);
+    cursor: zoom-in;
+}
+
+main div.container-img p.legenda {
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: var(--cor1);
+    background-color: var(--cor2);
+    padding: 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* PORTIFÓLIO */
+main > section#portifolio div.projetos {
+    margin-top: 50px;
+
+}
+
+main > section#portifolio div.projetos img {
+    width: 100%;
+    max-width: 500px;
+}
+
+main > section#portifolio div.projetos ul.listaConceitos {
+    text-align: justify;
+    padding: 0 30px;
+}
+main > section#portifolio div.projetos ul.listaConceitos li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+main > section#portifolio div.projetos a.links-projetos {
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 10px;
+    transition-duration: 0.3s ease;
+}
+main > section#portifolio div.projetos a.links-projetos:hover {
+    background-color: var(--cor3);
+}
+
+main > section#portifolio h2 {
+    font-size: 1.5em;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+main > section#portifolio div.projetos-par {
+    background-color: var(--cor3);
+    padding: 30px 0;
+    border-top: solid 1.8px;
+    border-bottom: solid 1.8px;
+}
+
+
+main p {
+    text-indent: 10px;
+    text-align: justify;
+    margin: 20px 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    padding: 10px;
+}
+
+
+.texto-contato {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: monospace;
+}
+
+.container-contato {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* FORM */
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-contato input,
+#form-contato textarea {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+#form-contato textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.container-contato button {
+    background-color: var(--cor2);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container-contato button:hover {
+    background-color: var(--cor0);
+}
+
+#status-form {
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* TELAS MAIORES */
+@media only screen and (min-width: 700px) {
+
+    * {
+        font-size: 14px;
+    }
+    body {
+        
+    }
+
+    nav {
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    main .container-img {
+        max-width: 250px;
+    }
+    main div.container-img p.legenda {
+        font-size: 0.7em;
+    }
+    main {
+        max-width: 100%;
+    }
+    main section {
+        width: 90%;
+        margin: auto;
+    }
+    #sobremim {
+        width: 100%;
+    }
+    #sobremim p {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    nav {
+        width: 50%;
+    }
+    main {
+        max-width: 100%;
+    }
+    div.projetos-bitwise {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    div.projetos-bitwise h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+
+    }
+    div.projetos-bitwise a.link-img-projeto {
+        width: 80%;
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 6;
+    }
+    div.projetos-bitwise h3 {
+        
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    div.projetos-bitwise p ul {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    
+}
